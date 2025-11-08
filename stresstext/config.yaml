@@ -1,0 +1,23 @@
+Mqtt:
+  IP: 127.0.0.1
+#  IP: localhost
+  Port: 1883
+  UserName:
+  Password:
+  AutoReconnect: true
+  ConnectTimeout: 10000
+NCLink:
+  QueryResponseQoS: 0
+  QueryRequestQoS: 0
+  SetResponseQoS: 0
+  SetRequestQoS: 0
+  ProbeQueryRequestQoS: 0
+  ProbeSetRequestQoS: 0
+  ProbeQueryResponseQoS: 0
+  ProbeSetResponseQoS: 0
+  RegisterRequestQoS: 0
+  RegisterResponseQoS: 0
+  ProbeVersionQoS: 0
+  ProbeVersionResponseQoS: 0
+Log:
+  File: log.txt

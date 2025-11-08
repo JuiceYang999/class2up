@@ -1,0 +1,13 @@
+{application,emqx_bridge,
+             [{description,"An OTP application"},
+              {vsn,"0.1.5"},
+              {registered,[]},
+              {mod,{emqx_bridge_app,[]}},
+              {applications,[kernel,stdlib,emqx,emqx_connector]},
+              {env,[]},
+              {modules,[emqx_bridge,emqx_bridge_api,emqx_bridge_app,
+                        emqx_bridge_mqtt_schema,emqx_bridge_proto_v1,
+                        emqx_bridge_resource,emqx_bridge_schema,
+                        emqx_bridge_sup,emqx_bridge_webhook_schema]},
+              {licenses,["Apache 2.0"]},
+              {links,[]}]}.

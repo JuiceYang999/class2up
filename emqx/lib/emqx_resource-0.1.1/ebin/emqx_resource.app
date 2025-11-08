@@ -1,0 +1,12 @@
+{application,emqx_resource,
+             [{description,"Manager for all external resources"},
+              {vsn,"0.1.1"},
+              {registered,[]},
+              {mod,{emqx_resource_app,[]}},
+              {applications,[kernel,stdlib,gproc,jsx,emqx]},
+              {env,[]},
+              {modules,[emqx_resource,emqx_resource_app,emqx_resource_manager,
+                        emqx_resource_manager_sup,emqx_resource_proto_v1,
+                        emqx_resource_sup,emqx_resource_validator]},
+              {licenses,["Apache 2.0"]},
+              {links,[]}]}.

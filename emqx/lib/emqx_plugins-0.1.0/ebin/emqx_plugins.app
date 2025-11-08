@@ -1,0 +1,9 @@
+{application,emqx_plugins,
+             [{registered,[]},
+              {description,"EMQX Plugin Management"},
+              {vsn,"0.1.0"},
+              {modules,[emqx_plugins,emqx_plugins_app,emqx_plugins_cli,
+                        emqx_plugins_schema,emqx_plugins_sup]},
+              {mod,{emqx_plugins_app,[]}},
+              {applications,[kernel,stdlib,emqx]},
+              {env,[]}]}.

@@ -1,0 +1,6 @@
+emqx start
+StressTest-INC-Cloud -n 1 -b 0
+backend.py
+yarn serve
+mysql密码：cps@CPS123
+TOKEN：7ucc4S8rrzwu85NA5nUYb_CNG7C-03Rbuyf2A85A5leATuxcPH_UlFvrCNXSGQtxvZQTuY_C6O7BUWNg4oIH-g==

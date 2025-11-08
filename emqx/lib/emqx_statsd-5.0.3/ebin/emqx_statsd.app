@@ -1,0 +1,12 @@
+{application,emqx_statsd,
+             [{description,"EMQX Statsd"},
+              {vsn,"5.0.3"},
+              {registered,[]},
+              {mod,{emqx_statsd_app,[]}},
+              {applications,[kernel,stdlib,estatsd,emqx]},
+              {env,[]},
+              {modules,[emqx_statsd,emqx_statsd_api,emqx_statsd_app,
+                        emqx_statsd_config,emqx_statsd_proto_v1,
+                        emqx_statsd_schema,emqx_statsd_sup]},
+              {licenses,["Apache 2.0"]},
+              {links,[]}]}.

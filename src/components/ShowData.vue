@@ -121,7 +121,7 @@ export default {
             // 9.2. 生成X轴标签（简单地使用索引）
             const xAxisData = this.chartData.map((_, index) => index);
 
-            // 9.3. 更新 Echarts 图表
+            // 9.3. (已修正) 更新 Echarts 图表
             this.chart.setOption({
               xAxis: {
                 data: xAxisData,
@@ -129,6 +129,8 @@ export default {
               series: [
                 {
                   data: this.chartData,
+                  type: 'line',    // <--- ！！！(修正) 加上这一行
+                  smooth: true   // <--- ！！！(修正) 加上这一行
                 },
               ],
             });

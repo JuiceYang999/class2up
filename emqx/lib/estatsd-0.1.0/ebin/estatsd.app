@@ -1,0 +1,12 @@
+{application,estatsd,
+             [{description,"Erlang StatsD Client"},
+              {vsn,"0.1.0"},
+              {modules,[estatsd,estatsd_app,estatsd_protocol,estatsd_sup]},
+              {registered,[estatsd_sup]},
+              {applications,[kernel,stdlib]},
+              {mod,{estatsd_app,[]}},
+              {env,[]},
+              {licenses,["Apache-2.0"]},
+              {maintainers,["EMQ X Team <contact@emqx.io>"]},
+              {links,[{"Homepage","https://emqx.io/"},
+                      {"Github","https://github.com/emqx/estatsd"}]}]}.

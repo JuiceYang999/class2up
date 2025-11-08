@@ -1,0 +1,6 @@
+arch: "win32"
+wordsize: 64
+os: "windows"
+erlang: "24.2.1"
+elixir: "none"
+relform: "tgz"

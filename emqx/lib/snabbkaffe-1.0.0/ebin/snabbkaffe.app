@@ -1,0 +1,10 @@
+{application,snabbkaffe,
+             [{description,"Simple trace-based testing framework"},
+              {vsn,"1.0.0"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {modules,[asciiart,snabbkaffe,snabbkaffe_collector,
+                        snabbkaffe_nemesis,snabbkaffe_sup]},
+              {licenses,["Apache 2.0"]},
+              {links,[{"Github","https://github.com/k32/snabbkaffe"}]}]}.
