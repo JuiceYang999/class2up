@@ -193,18 +193,25 @@ def do_publish():
 
 @app.route('/get_data/', methods=['POST'])
 def get_data():
+    # 
+    # ！！！(修正) 加上这一行，告诉 Python 我们要用的是全局的那个 latest_data_store ！！！
+    # 
+    global latest_data_store 
+    
     try:
         data = request.get_json()
         data_id = data.get('id')
         if not data_id:
             return jsonify({'status': 'error', 'message': 'ID is required'}), 400
-        value = latest_data_store.get(data_id)
+        
+        # 现在这里可以正确地从全局变量中取到数据了
+        value = latest_data_store.get(data_id) 
+        
         if value is not None:
             return jsonify({'status': 'ok', 'id': data_id, 'value': value})
         else:
             return jsonify({'status': 'not_found', 'id': data_id, 'value': None})
     except Exception as e:
-        print(f"获取数据失败: {e}")
         return jsonify({'status': 'error', 'message': str(e)}), 500
 
 # 启动 Flask 服务

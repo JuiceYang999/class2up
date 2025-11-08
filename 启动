@@ -1,6 +1,25 @@
+vue ui：创建vue界面的基础代码
 emqx start
 StressTest-INC-Cloud -n 1 -b 0
 backend.py
 yarn serve
 mysql密码：cps@CPS123
 TOKEN：7ucc4S8rrzwu85NA5nUYb_CNG7C-03Rbuyf2A85A5leATuxcPH_UlFvrCNXSGQtxvZQTuY_C6O7BUWNg4oIH-g==
+运行influxdb：cd D:\code9\class2down\influxd influx
+
+vscode运行：
+注意对应的环境在终端中打开
+conda activate blackbody
+github配置：
+PS C:\Users\Lenovo\yyf3> git config --global --unset http.proxy
+>> git config --global --unset https.proxy
+>> PS C:\Users\Lenovo\yyf3> git config --global http.proxy http://127.0.0.1:7890                            
+>> git config --global https.proxy http://127.0.0.1:7890                            
+>> PS C:\Users\Lenovo\yyf3> 
+
+代码放到移动硬盘里会导致运行和编译速度变慢
+
+始终存在未解决的问题：{任务五只有VUE 页面 “数据显示” 页面，
+您会看到 Echarts 图表不显示数据了，
+而且在数据采集界面一点连接可以连接，
+再点到数据显示界面，连接就自动断开了}

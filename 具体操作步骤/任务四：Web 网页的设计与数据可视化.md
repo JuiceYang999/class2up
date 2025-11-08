@@ -455,16 +455,14 @@ export default {
           if (res.data && res.data.status === 'ok' && res.data.value !== null) {
             const newValue = parseFloat(res.data.value); // 确保是数字
             
-            // 9.1. (新增) 管理数据数组，保持其长度不超过50
             if (this.chartData.length > 50) {
-              this.chartData.shift(); // 移除第一个元素
+              this.chartData.shift(); 
             }
             this.chartData.push(newValue);
             
-            // 9.2. 生成X轴标签（简单地使用索引）
             const xAxisData = this.chartData.map((_, index) => index);
 
-            // 9.3. 更新 Echarts 图表
+            // 9.3. (已修正) 更新 Echarts 图表
             this.chart.setOption({
               xAxis: {
                 data: xAxisData,
@@ -472,12 +470,15 @@ export default {
               series: [
                 {
                   data: this.chartData,
+                  type: 'line',    // <--- ！！！(修正) 加上这一行
+                  smooth: true   // <--- ！！！(修正) 加上这一行
                 },
               ],
             });
 
           } else if (res.data.status === 'not_found') {
-            console.log(`数据ID ${this.dataIdToFetch} 尚未收到.`);
+            // 这就是你现在在F12里看到的日志
+            console.log(`数据ID ${this.dataIdToFetch} 尚未收到.`); 
           }
         })
         .catch(err => {
