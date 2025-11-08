@@ -4,9 +4,10 @@ StressTest-INC-Cloud -n 1 -b 0
 backend.py
 yarn serve
 mysql密码：cps@CPS123
-TOKEN：7ucc4S8rrzwu85NA5nUYb_CNG7C-03Rbuyf2A85A5leATuxcPH_UlFvrCNXSGQtxvZQTuY_C6O7BUWNg4oIH-g==
+本地inflexdbTOKEN：7ucc4S8rrzwu85NA5nUYb_CNG7C-03Rbuyf2A85A5leATuxcPH_UlFvrCNXSGQtxvZQTuY_C6O7BUWNg4oIH-g==
 运行influxdb：cd D:\code9\class2down\influxd influx
 
+云端inflexdbTOKEN：export zsOj7fEHWcI3DUOhFvhZ0iR39tRyWxko0oGAS5grC8PVyr-RhLe9X3WwHWPjdMJmiZRHwxqt2pE5XWi3TQ34Og==
 vscode运行：
 注意对应的环境在终端中打开
 conda activate blackbody
@@ -23,3 +24,4 @@ PS C:\Users\Lenovo\yyf3> git config --global --unset http.proxy
 您会看到 Echarts 图表不显示数据了，
 而且在数据采集界面一点连接可以连接，
 再点到数据显示界面，连接就自动断开了}
+但是再“backend(inflexdb_cloud).py”里修复了？哈哈
