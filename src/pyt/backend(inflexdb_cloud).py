@@ -27,11 +27,6 @@ INFLUX_LOCAL_BUCKET = "class2down"
 
 # 3. InfluxDB (云端) 配置
 INFLUX_CLOUD_URL = "https://us-east-1-1.aws.cloud2.influxdata.com"
-# 
-# ！！！(修复 1) ！！！
-# 你之前复制的是 "INFLUXDB_TOKEN=zsOj..."，这是不对的。
-# Token 字符串本身不包含 "INFLUXDB_TOKEN=" 这几个字。
-#
 INFLUX_CLOUD_TOKEN = "zsOj7fEHWcI3DUOhFvhZ0iR39tRyWxko0oGAS5grC8PVyr-RhLe9X3WwHWPjdMJmiZRHwxqt2pE5XWi3TQ34Og==" # 你的云端 Token
 INFLUX_CLOUD_ORG = "XJTU"
 INFLUX_CLOUD_BUCKET = "class2down"
